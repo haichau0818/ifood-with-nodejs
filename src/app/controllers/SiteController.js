@@ -16,7 +16,7 @@ const {multipleMongooseToOject} =  require('../../ulti/mongoose');
   }
 
   search(req, res) {
-    res.send('Search');
+    res.send('search');
   }
 }
 

@@ -1,25 +1,66 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Food Manage</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+<div class="nav-bar-header">
+ 
+  <div class="nav-left">
+    <div class="logo-name">
+      <div class="logo-image">
+        <img src="" alt="">
+        <span class="logo-name-sp">iFood</span>
+      </div>
+    </div>
+    <div class="menu-left">
+      <ul class="nav-links">
+        <li>
+          <a href="/">
+            <i class="uil uil-estate"></i>
+            <span class="link-name">Home</span>
+          </a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/me/stored/courses">List course</a>
+        <li>
+          <a href="/me/stored/courses">
+            <i class="uil uil-pizza-slice"></i>
+            <span class="link-name">Foods</span>
+          </a>
         </li>
-          <li class="nav-item">
-          <a class="nav-link" href="/courses/create">Create course</a>
+        <li>
+          <a href="#">
+            <i class="uil uil-coffee"></i>
+            <span class="link-name">Drinks</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="uil uil-clinic-medical"></i>
+            <span class="link-name">Manage</span>
+          </a>
         </li>
       </ul>
-      {{!-- <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form> --}}
     </div>
   </div>
-</nav>
+ <div class="nav-top">
+    <div class="search-box">
+      <i class="uil uil-search"></i>
+      <input type="text" name="" id="" placeholder="Search hear...">
+    </div>
+    <div class="menu-box">
+      <ul class="menu-top-items">
+        <li>
+          <a class="menu-item-a" href="#">
+            <i class="uil uil-map-marker"></i>
+            <span class="link-name">Location</span>
+          </a>
+        </li>
+         <li>
+          <a class="menu-item-a" href="#">
+            <i class="uil uil-comment"></i>
+            <span class="link-name">Chat</span>
+          </a>
+        </li>
+      </ul>
+       <div class="user-box">
+      <img src="../img/logo.jpg" alt="" class="user-image">
+      <p>Login</p>
+    </div>
+    </div>
+   
+  </div>
+</div>
