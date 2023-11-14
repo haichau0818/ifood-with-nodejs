@@ -1,31 +1,66 @@
 <div class="title-content">
-    <a href="" class="menu-tag">Food</a>
-    <span></span>
-    <a href="" class="tag-item">Create</a>
+  <a href="" class="menu-tag">Food</a>
+  <span></span>
+  <a href="" class="tag-item">Create</a>
 </div>
 <div class="content-row">
-<form class="form-create" method="post" action="/foods/store">
-    <label for="name" class="form-lable">Name</label>
-    <div class="form-input">
-      <input type="text" class="form-input-control" name="name" id="name">
-    </div>
-     <label for="price" class="form-lable">Price</label>
-    <div class="form-input">
-      <input type="number" class="form-input-control" name="price" id="price">
-    </div>
-     <label for="quantity" class="form-lable">Quantity</label>
-    <div class="form-input">
-      <input type="number" class="form-input-control" name="quantity" id="quantity">
-    </div>
-     <label for="expDate" class="form-lable">Exp Date</label>
-    <div class="form-input">
-      <input type="date" class="form-input-control" name="expDate" id="expDate">
-    </div>
-     <label for="image" class="form-lable">Image</label>
-    <div class="form-input">
-      <input type="text" class="form-input-control" name="image" id="image">
-    </div>
-    <button type="submit" class="">Create</button>
-</form>
-</div>
 
+  <div class="row-item">
+ <form class="form-create" method="post" action="/foods/store">
+    <div class="form-item-control">
+      <label for="name" class="form-lable">Name</label>
+      <div class="form-input">
+        <input type="text" class="form-input-control" name="name" id="name">
+      </div>
+    </div>
+    <div class="form-item-control">
+      <label for="price" class="form-lable">Price</label>
+      <div class="form-input">
+        <input type="number" class="form-input-control" name="price" id="price">
+      </div>
+    </div>
+    <div class="form-item-control">
+      <label for="quantity" class="form-lable">Quantity</label>
+      <div class="form-input">
+        <input type="number" class="form-input-control" name="quantity" id="quantity">
+      </div>
+    </div>
+    <div class="form-item-control">
+      <label for="expDate" class="form-lable">Exp Date</label>
+      <div class="form-input">
+        <input type="date" class="form-input-control" name="expDate" id="expDate">
+      </div>
+    </div>
+    <div class="form-item-control">
+      <label for="image" class="form-lable">Image</label>
+      <div class="form-input">
+        <input type="text" class="form-input-control" name="image" id="image">
+      </div>
+    </div>
+    <button type="submit" class="btn-submit">Create</button>
+  </form>
+
+  <div class="table-created">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Handle</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  </div>
+ 
+</div>

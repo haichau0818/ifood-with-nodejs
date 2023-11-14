@@ -1,5 +1,6 @@
 const newRouter = require('./news');
 const foodRouter = require('./foods');
+const drinkRouter = require('./drinks');
 const courseRouter = require('./courses');
 const meRouter = require('./me');
 const loginRegisterRouter = require('../routes/login-register');
@@ -10,6 +11,8 @@ function route(app) {
   app.use('/news', newRouter);
   app.use('/courses', courseRouter);
   app.use('/food', foodRouter);
+  app.use('/drink', drinkRouter);
+
 
   app.use('/me', meRouter);
   app.use('/login-register', loginRegisterRouter);
