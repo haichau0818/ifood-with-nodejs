@@ -4,7 +4,8 @@ const { mongooseToOject, multipleMongooseToOject } = require("../../ulti/mongoos
 
 
 class DrinkController{
-
+  
+    //[GET]/drink/drinks
     async show(req, res,next) {
 
         const drinks = await Drink.find({})
@@ -15,22 +16,6 @@ class DrinkController{
         })
         .catch(next);   
       }
-
-      // create(req, res, next) {
-      //   res.render("foods/create");
-      // }
-    
-      ///[POST]course/store
-    
-      // async store(req, res, next) {
-      //   const food = await new Food(req.body);
-      //   food
-      //     .save()
-      //     .then(() => res.redirect("/foods/foods"))
-      //     .catch((err) => {});
-      // }
-
-
 }
 
 module.exports = new DrinkController();

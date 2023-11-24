@@ -12,7 +12,6 @@ const {multipleMongooseToOject} =  require('../../ulti/mongoose');
           })
         })
         .catch(next);
-   
   }
 
   search(req, res) {

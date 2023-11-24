@@ -15,6 +15,7 @@ const Food = new Schema({
   expDate: { type: Date , default: Date.now},
   category: { type: String},
   desription: { type: String},
+  image: {type:String},
   slug: { type: String, slug:'name', unique:true},
 },
 {

@@ -12,8 +12,6 @@ function route(app) {
   app.use('/courses', courseRouter);
   app.use('/food', foodRouter);
   app.use('/drink', drinkRouter);
-
-
   app.use('/me', meRouter);
   app.use('/login-register', loginRegisterRouter);
   app.use('/', siteRouter);

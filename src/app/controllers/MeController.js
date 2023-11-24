@@ -14,12 +14,6 @@ const {mongooseToOject, multipleMongooseToOject} =  require('../../ulti/mongoose
     })
     .catch(next);   
   }
- ///[GET]course/create
-
-
- ///[POST]course/store
-
- 
 }
 
 module.exports = new MeController();

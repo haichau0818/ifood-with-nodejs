@@ -7,14 +7,9 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    
-    //color: $text-color-200;
-
-  
 }
 body{
     background:$bg-color-100;
-
 }
 .myApp{
     margin: 0;
@@ -415,9 +410,40 @@ body{
 .table-created{
     background-color: $bg-color-200;
     margin-left: 40px;
-    //width: ;
+    border-left: 2px solid $bg-color-100;
 }
 
 .table-created .table{
+    margin-left: 30px;
+    max-width: 800px;
     color: $text-color-100;
+}
+// Detail -  Product
+
+.detail-item{
+    display: flex;
+    //justify-content: center;
+    //align-self: center;
+}
+
+.detail-item .image-box-items{
+    width: 500px;
+    margin: 10px;
+}
+
+.detail-item .image-box-items .image-large img{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    padding: 10px;
+
+}
+
+.detail-item .detail-box-items{
+    margin-top: 20px;
+    color: $text-color-100;
+}
+
+.detail-item .detail-box-items h1{
+    font-weight: 600;
 }
