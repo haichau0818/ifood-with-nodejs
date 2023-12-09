@@ -19,16 +19,26 @@ class FoodController {
     res.render("foods/create");
   }
 
-  ///[POST]course/store
+  ///[POST]food/store
 
   async store(req, res, next) {
     const food = await new Food(req.body);
     food
       .save()
-      .then(() => res.redirect("/foods/foods"))
+      .then(() => res.redirect("/food/foods"))
       .catch((err) => {});
   }
 
+  //[GET]food/manage
+  async manage(req, res, next) {
+    const food = await Food.find({})
+      .then((food) => {
+        res.render("foods/manage", {
+          food: multipleMongooseToOject(food),
+        });
+      })
+      .catch(next);
+  }
   ///[GET]food/detail/:slug
   async detail(req, res, next) {
 

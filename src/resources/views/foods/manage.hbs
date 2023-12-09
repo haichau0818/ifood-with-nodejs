@@ -1,0 +1,36 @@
+<div class="title-content">
+    <a href="" class="menu-tag">Food</a>
+    <span></span>
+    <a href="" class="tag-item">Foods</a>
+</div>
+<div class="content-row">
+    <table class="table" style="color: white;">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Exp Date</th>
+      <th scope="col">Image link</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+
+    </tr>
+  </thead>
+      {{#each food}}
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.name}}</td>
+      <td>{{this.price}}</td>
+      <td>{{this.quantity}}</td>
+      <td>{{this.expDate}}</td>
+      <td>{{this.image}}</td>
+      <td>@mdo</td>
+      <td>@mdo</td>
+    </tr>
+  </tbody>
+    {{/each}}
+</table>
+</div>
